@@ -26,9 +26,11 @@ linux-embedded-hal = "0.3"
 embedded-hal-mock = "0.8"
 
 [features]
-default = ["graphics"]
+default = ["graphics", "epd2in13_v3"]
 
 graphics = ["embedded-graphics-core"]
+epd2in13_v3 = []
+epd2in13_v2 = []
 
 # Offers an alternative fast full lut for type_a displays, but the refreshed screen isnt as clean looking
 type_a_alternative_faster_lut = []
